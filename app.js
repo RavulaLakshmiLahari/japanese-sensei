@@ -1,6 +1,6 @@
-// ─── PASTE YOUR GEMINI KEY HERE ──────────────────────────
-// Get it FREE from: https://aistudio.google.com → Get API Key
-// It should start with "AIza..."
+// ─── PASTE YOUR GROQ KEY HERE ──────────────────────────
+
+
 
 const GROQ_KEY = "YOUR_GROQ_API_KEY_HERE";
 
