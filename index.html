@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Japanese Sensei</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header id="header">
+    <div class="logo">🇯🇵 Japanese Sensei</div>
+    <span id="level-badge" class="badge">N5 Beginner</span>
+    <span id="streak-badge" class="badge streak">🔥 0 day streak</span>
+    <button onclick="resetChat()">Reset</button>
+  </header>
+
+  <div id="controls">
+    <select id="level-select" onchange="changeLevel()">
+      <option value="N5">N5 — Complete Beginner</option>
+      <option value="N4">N4 — Elementary</option>
+      <option value="N3">N3 — Intermediate</option>
+      <option value="N2">N2 — Upper Intermediate</option>
+      <option value="N1">N1 — Advanced</option>
+    </select>
+    <select id="topic-select"></select>
+    <button onclick="startLesson()">📚 Start Lesson</button>
+    <button onclick="startQuiz()">📝 Quiz Me</button>
+  </div>
+
+  <div id="score-bar">
+    <span>✅ <span id="correct-count">0</span> correct</span>
+    <span>❌ <span id="wrong-count">0</span> wrong</span>
+    <span>💬 <span id="msg-count">0</span> exchanges</span>
+  </div>
+
+  <div id="chat-area"></div>
+
+  <div id="input-row">
+    <textarea id="user-input" placeholder="Type in English or Japanese... (Enter to send)" rows="2"></textarea>
+    <button onclick="sendMessage()">Send ➤</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
